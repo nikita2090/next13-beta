@@ -11,6 +11,7 @@ export default function Clients() {
     return !err ? (
         <div>
             <h2>Clients</h2>
+            <p>Page has local error boundary (error file)</p>
 
             <button onClick={handleThrowError}>Throw error</button>
         </div>

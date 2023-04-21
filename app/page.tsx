@@ -4,19 +4,26 @@ import Link from 'next/link';
 export default function Home() {
     return (
         <div className={styles.main}>
-            <h1>Home Page</h1>
+            <h1>Sections</h1>
             <br />
             <br />
 
-            <h2>Shop</h2>
-            <Link href={'/products'}>Products</Link>
-            <Link href={'/contacts'}>Contacts</Link>
-            <br />
-            <br />
+            <h2>Routing</h2>
+            <Link href={'/promo'}>Promo (Layout sharing)</Link>
+            <Link href={'/products'}>
+                Products (Layout sharing & dynamic segments)
+            </Link>
 
-            <h2>Marketing</h2>
-            <Link href={'/clients'}>Clients</Link>
-            <Link href={'/dashboard'}>Dashboard</Link>
+            <br />
+            <Link href={'/clients'}>Clients (Local error boundary)</Link>
+            <Link href={'/dashboard'}>Dashboard (Parallel routing)</Link>
+            <br />
+            <br />
+            <h2>Server & Client components</h2>
+            <Link href={'/contacts'}>
+                Contacts (Static route with Server - Client - Server components
+                structure)
+            </Link>
         </div>
     );
 }

@@ -15,6 +15,8 @@ export default function Products() {
     return (
         <div>
             <h2>Products</h2>
+            <p>Products & Promo have same layout</p>
+            <br />
             {PRODUCTS.map((item) => (
                 <li key={item.id}>
                     <Link href={`/products/${item.id}`}>{item.name}</Link>
