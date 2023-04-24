@@ -2,6 +2,7 @@ import { ContactsChild } from '@/components/ContactsChild';
 import { ContactsInfo } from '@/components/ContactsInfo';
 
 export default function Contacts() {
+    console.log('render');
     return (
         <div>
             <h2>Contacts (Server Component)</h2>

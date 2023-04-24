@@ -24,6 +24,11 @@ export default function Home() {
                 Contacts (Static route with Server - Client - Server components
                 structure)
             </Link>
+
+            <Link href={'/users'}>
+                Posts (Dynamic route with Server - Client - Server components
+                structure)
+            </Link>
         </div>
     );
 }
