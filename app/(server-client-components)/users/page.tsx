@@ -33,7 +33,7 @@ async function getPosts(): Promise<Posts> {
     return res.json();
 }
 
-async function getRandomUser(): Promise<Posts> {
+async function getRandomUser() {
     const res = await fetch('https://randomuser.me/api/?inc=name', {
         cache: 'no-store',
         next: { revalidate: 0 },
